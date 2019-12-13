@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://st2.depositphotos.com/8392720/11436/v/950/depositphotos_114367722-stock-illustration-social-media-seamless-pattern.jpg");
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f1f1f1;
+    z-index: -1;
+    opacity: 0.65;
+  }
+
+.face {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #ffcd00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face::before {
+    content: '';
+    position: absolute;
+    top: 160px;
+    width: 100px;
+    height: 50px;
+    background-color: #b57700;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
+}
+
+.face:hover::before {
+    top: 180px;
+    width: 130px;
+    height: 10px;
+    background-color: #b57700;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.eyes {
+    margin-top: -10vh;
+    position: relative;
+    top: 0;
+    display: flex;
+}
+
+.eyes .eye {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.eyes .eye::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%,-50%);
+    width: 35px;
+    height: 35px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+  
+

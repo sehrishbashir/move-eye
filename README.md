@@ -1,2 +1,2 @@
-s# move-eye
+# move-eye
  https://sehrishbashir.github.io/move-eye/.
